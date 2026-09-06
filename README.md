@@ -8,19 +8,36 @@ The two original designs in `docs/source/` are unchanged byte-for-byte. Their SH
 
 ## Run locally
 
-Validated on macOS 15.5 arm64 with Node 24.19.0. No npm packages are required. Set an absolute Node path if `node` is unavailable:
+Requires Node.js 24+ on PATH; recorded validation used macOS 15.5 arm64 and Node 24.19.0. No npm packages are required:
 
 ```sh
-RUVORA_NODE=/Users/sin-yebin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node
+git clone https://github.com/ruvora/ruvora-workspace.git
+cd ruvora-workspace
+RUVORA_NODE=node
 "$RUVORA_NODE" bin/workspace.mjs inspect
 "$RUVORA_NODE" bin/workspace.mjs capabilities
-"$RUVORA_NODE" --test --test-reporter=tap
-"$RUVORA_NODE" scripts/demo.mjs
 ```
 
 The default inspection is read-only, including on a fresh project. It does not select an identity, create an index, create state, or start work. The demo writes synthetic records to a temporary directory, reuses the existing Fold/Port modules, exercises response-loss recovery and archive/restore, prints its actual results, and removes that temporary directory.
 
 Integration tests and the demo expect these sibling checkouts, matching the lock's source hashes: `../codex-threadgraph`, `../threadfold`, `../threadport`. They are read/imported only. Tests never run the sibling test suites or invoke their live daemons. A missing or changed module is a reported failure, not silently skipped. Core inspection needs none of these modules.
+
+For integration tests and the fixture demo, prepare the matching sibling revisions from the parent directory:
+
+```sh
+cd ..
+git clone https://github.com/ruvora/codex-threadgraph.git codex-threadgraph
+git -C codex-threadgraph checkout a2fc8a646f29f2625dba54c2db2865364eb359b1
+git clone https://github.com/ruvora/codex-threadfold.git threadfold
+git -C threadfold checkout 08814a357b01d7b70885eb20bb9daec65ffb9c98
+git clone https://github.com/ruvora/codex-threadport.git threadport
+git -C threadport checkout 2ef99c14bc396203657865b744ca24de4823cac8
+cd ruvora-workspace
+"$RUVORA_NODE" --test --test-reporter=tap
+"$RUVORA_NODE" scripts/demo.mjs
+```
+
+For existing checkouts, inspect local changes before switching revisions instead of cloning duplicates. These revisions match the Graph/Fold/Port file hashes in the lock. The lock also preserves historical inspection paths and a Hub snapshot; it is not a promise that current Hub main matches that snapshot. Native Hub dispatch is still unsupported. See [post-repair acceptance](docs/POST_REPAIR_ACCEPTANCE_2026-09-06.md) for the dated verification. Set `RUVORA_NODE` to an absolute executable path if needed on your machine.
 
 ## Select a project
 
