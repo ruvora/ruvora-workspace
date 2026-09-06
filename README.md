@@ -6,6 +6,35 @@ A runnable, local project gateway for finding context, preparing work, observing
 
 The two original designs in `docs/source/` are unchanged byte-for-byte. Their SHA-256 values and the exact inspected component source files are recorded in [workspace-lock.json](workspace-lock.json). See the [implementation appendix](docs/IMPLEMENTATION_APPENDIX.md), [한국어 사용법](docs/USAGE_KO.md), and [verification record](docs/VERIFICATION.md).
 
+## Why Workspace exists
+
+After several days away from a project, a developer needs to recover the decisions, unfinished work and next useful action. Workspace is designed around that return-to-project moment. Its intended journey is to find context, continue work, review completed records and eventually move verified history to another environment. The user should be able to think in those activities without learning which plugin owns each step.
+
+**One project experience, explicit ownership.** Workspace connects observations and actions while each underlying product remains responsible for its own state and effects. A WorkCard observes a Hub operation; it does not invent completion. A ContextSelection records evidence and a revision; it does not silently refresh the source. Review records refer to exact plans; they cannot become reusable global approval. The [product design](docs/source/RUVORA_WORKSPACE_DESIGN.md) explains this experience and its initial individual-developer audience.
+
+## Technical architecture
+
+```text
+Selected project -> profile and capability checks -> CLI / stdio MCP report
+  -> ContextSelection / WorkCard / WorkflowTicket / ReviewCard
+  -> scoped adapters -> product-owned evidence and operations
+```
+
+The profile binds host/project identity separately from a verified filesystem path. Workspace stores its own references, workflow intent and observations in atomic local JSON files under one writer lock. Stable request keys and product operation IDs allow recovery to query an existing operation after response loss. A WorkflowTicket connects user-visible stages; Hub retains ownership of scheduling, leases and execution completion.
+
+The current Graph adapter reads a quiescent published SQLite snapshot through an immutable read-only URI. Fold and Port adapters import explicit local modules only after checking pinned source hashes. Hub dispatch uses a durable fixture contract double. These choices permit local integration testing while the native handshake and execution contracts remain unavailable. Partial component failures stay distinguishable from empty data, and inspection does not start background work. See the [architecture design](docs/source/RUVORA_WORKSPACE_ARCHITECTURE.md) and [implementation decisions](docs/IMPLEMENTATION_APPENDIX.md).
+
+## Direction and product family
+
+| Product | Contribution to the intended project journey |
+| --- | --- |
+| [ThreadGraph](https://github.com/ruvora/codex-threadgraph) | Explain relationships, source evidence and useful context |
+| [ThreadHub](https://github.com/ruvora/codex-threadhub) | Execute and validate work under project-specific contracts |
+| [ThreadFold](https://github.com/ruvora/codex-threadfold) | Prepare consolidation, reviewed cleanup and recovery |
+| [ThreadPort](https://github.com/ruvora/codex-threadport) | Develop bounded, independently resumable history transfer |
+
+The progression is from local read-only inspection and fixture journeys to an authenticated native pilot, then verified transfer. Native delivery requires existing-daemon reuse, trusted identity and approvals, real navigation and coexistence testing. Port remains conditional on its own G0/G3 gates. The measure of success is whether a returning user can confidently choose the next action with the right context; the number of threads hidden or controls displayed is insufficient on its own.
+
 ## Run locally
 
 Requires Node.js 24+ on PATH; recorded validation used macOS 15.5 arm64 and Node 24.19.0. No npm packages are required:
