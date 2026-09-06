@@ -1,0 +1,7 @@
+{
+  "name": "ruvora-workspace", "version": "0.1.0", "private": true,
+  "type": "module", "engines": { "node": ">=24.0.0" },
+  "description": "Local Workspace gateway with explicit integration capability gates",
+  "bin": { "ruvora-workspace": "./bin/workspace.mjs" },
+  "scripts": { "test": "node --test", "start": "node bin/workspace.mjs" }
+}

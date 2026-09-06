@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "ruvora.interop/1",
+  "packageVersion": "0.1.0",
+  "sourceDesigns": {
+    "docs/source/RUVORA_WORKSPACE_ARCHITECTURE.md": "65ab1b7386af6c3fef7f91e96c2a6955eabc8d6382ee70c449c4f081530d2bb6",
+    "docs/source/RUVORA_WORKSPACE_DESIGN.md": "ce1d07114d1a58254126d890748fbeb5d5fc353244a007c157adf6f180585c2e"
+  },
+  "components": {
+    "hub": {
+      "source": "/Users/sin-yebin/Desktop/project/codex-control-plane",
+      "version": "0.14.0",
+      "commit": "82786f30f97149cc95c124a31a91c01de5bf9cf9",
+      "files": {
+        "package.json": "b5c4d63ec24d77757388bc60b13615bb5770c80e46e1ee6b49ebfa85bbe4aee8",
+        "src/agent-names.js": "bd610ac4e06422491d28370faddf1dba75e9f85b2108c297ac84d1cd01641024",
+        "src/app-server-client.js": "7c0b51ecd738b65e1a1396175aa582023d99d22501463a82f6a181e04bbc0531",
+        "src/build-info.js": "68a7f732285fe15470a75e4b0dcdfc26330216dbed60d0583c9584c5f1e5c9cc",
+        "src/cli.js": "73ac3d819dd18695187e31174ae2629ebf497e093eede6a4d8d5243a70aa04f8",
+        "src/command-evidence.js": "1dc0ad168f043eeece96cbc2096d9668ef0fdba37d9e0ecdfd1d2bd71dc0dc18",
+        "src/completion-evaluator.js": "65093c2cd28cd477060a9e1731dc0d82a970d70a2b5d7fe8672551d4b15f69e1",
+        "src/context-claims.js": "ae97e2c871c8c2daae0ad0127c77c529dbec9cec2d2f5d70f01ef08d41d23e1c",
+        "src/context-manager.js": "c04c3445022a7b3a3afaf27e8a02bc0d9f0872170b412562ee87184ba9d18cd4",
+        "src/context-resolver.js": "51fab6f88dbdc8762a6f9029de11871359052afc98ed67c73dd5957c405ae6e6",
+        "src/control-plane.js": "05ae339c32c3d30cdbc1f40334373b5ac29943d6b619cfc634802e238796af9c",
+        "src/daemon-client.js": "2590e187386a285322e840cee60c43ed30945160e555a1b857492610e7b50c8f",
+        "src/daemon.js": "7758031d2c1c5ea790784350124a23798cdcd3bb0a9fc00d13079fd386c9f51b",
+        "src/dashboard-model.js": "3088c779546bf3b5fa296089c75a039aa254c7fa13b35ec97dc626b58642dcf4",
+        "src/dashboard-server.js": "8528e808d46ecb6732bbafa9832303c94edf1717ded5bc922b8320efe8bee5cb",
+        "src/dispatch-policy.js": "fbd33009eb4c0d29ba91c4a3a28a5fec3b34c778f34ffb464a0e6c77a716b06c",
+        "src/domain-states.js": "4dbccc381fc2a25ab697235cb03daed27ec337adb39b20b7d66b434d5b32c774",
+        "src/execution-contracts.js": "e162e59f81ed5708745433d2303cf6e80787cf6689b7895894d60e3666d49ce1",
+        "src/failure-classifier.js": "deefb8cbdceb2427792757d9ece322c97761cc5c8c54441a35228e4067416331",
+        "src/global-runs.js": "14e2244fcdd6b226048617d4968f811ea7e663a5dc42ecf8c62a00653cbb33ff",
+        "src/host-pinning.js": "98fe7b30b6578e5f9664beff7e56a8e1041809a649b879650d3f601221deb096",
+        "src/mcp-proxy.js": "fe7cd14e91ec8133f3c337d9800142580878b8cc062f9fff56c2bd3b003bbb63",
+        "src/mcp-server.js": "f884587200611d7e1697475b6fa529e6d184c8d58a866d682eff18e1f14b2af0",
+        "src/native-evidence.js": "66c1af9fffc5bb6d45939bc51c5a7b1094e7eb9447785e6022a423c9fd9662bf",
+        "src/notification-policy.js": "264199d48429dfd7790b0ab07e8ed20ea7b27855964826fc4e57d26ca8f76ff8",
+        "src/output-schema.js": "90467c50a18b0a0efc4ef5fd3763eb3dc2ccec2e76a36a41b506f66e4f839122",
+        "src/owned-thread-control.js": "167a823f3463856ae6157422f2e526aa08777c6c578f70d8cdb80f27488b9931",
+        "src/planner-engine.js": "2584e77e14cae0de0f6ce2b065b8e1f3f5da304b6d0309ef18740e98a68a2e47",
+        "src/product-contracts.js": "410fdb2e4fd49212fbdffe2ea9bb470de9ec1cdccf69775cb59056f99e44d57c",
+        "src/project-identity.js": "59fe912f8d7f7f3c7b3f81f27ba6d7b89c23f225bbb93eaec4365f2e359e75b5",
+        "src/registry.js": "586fda292c5eb93431ef1ca21a8aee22b1bbbf86ac892bcfa7e0ca36a05c7c50",
+        "src/result-validator.js": "75cbe7c3e24a619383f1378f9330284e5b318fffc92466bb89156b8d3645efdd",
+        "src/retry-policy.js": "d012f47f6bd6ca2cfa2b7e40317988d7af1e6b9438f3071d2b3a33a958779145",
+        "src/role-templates.js": "4013ce1e1cdcb808283f733d7420c4ee6930a9b3e07adf3b09546b1e93764ecc",
+        "src/router.js": "69a4eff1787164029129734e545410b5c587318f812bfd2012d9eb6647bf1043",
+        "src/run-controller.js": "1abf3baae3a738b628387858a5885be1e08fae60490202f3656c648fb3287ccf",
+        "src/runtime-environment.js": "72df048098785b8abaeee4f0bf23016eb524641d2ea0326efe3d8bd9d7aca7cf",
+        "src/task-evidence.js": "ed3abc274f134236f8e539f5c7c53a5dce2e6ff697321c2cde3601d7a898e012",
+        "src/thread-knowledge-indexer.js": "a67bcf4f759818050fbffd8a1b6c23330e1ba7c1684503d345f92902b6aadc94",
+        "src/thread-lifecycle.js": "2ac4477b2e531fdf01005c43f6ebba1fb36b248d9c699f4844393c50dcdc586f",
+        "src/threadgraph-context-pack.js": "d837f55db12298a5a25ba57cdbd3eae2a1145e5046b27383f4adf88be4e16b63",
+        "src/turn-dispatcher.js": "2a193c5fc4d62f329dd6da43c19f973adc39dd24095007debe87cee0a399b14a",
+        "src/turn-output.js": "79f3b5d541e8d360949813c1ad86efeb9efd249bed88eeea4a2f21a46b25eac4",
+        "src/work-conversation.js": "d065d7ce26e5618cdceba7699346d81a5d1686e2f086e500deea2388390baba4",
+        "src/work-panel.js": "786af969bc97f03a4cf5ea32bfee47021d6fc9e306c1df392f74ea957ad318f9",
+        "src/work-status.js": "04f385ddf73242e27f4a10702754199515057711fe52e04d5d506bfbc6d82e04",
+        "src/worktree-manager.js": "7889535db679852fc68e63ceb50c1088b2b3ccad5feea6cc067fff5ecf7aa8d0"
+      }
+    },
+    "graph": {
+      "source": "/Users/sin-yebin/Desktop/project/codex-threadgraph",
+      "version": "0.1.0",
+      "commit": "aecd6ca4735c3dca7f550316e29b80de945150fb",
+      "files": {
+        "package.json": "9883ce003c5caf690e81a81a77495d64a1edb3566b90975d7d946c892bd1c05e",
+        "src/codex-app-server-host.mjs": "35eefc9b83c2a51c5d22966f97fed729f6a320ba42d773ccc90b934a21bd7340",
+        "src/context-pack.mjs": "62e56017d0d34dc56b8d057dd54757b11f626b0683cd4ff538df82ebe389b369",
+        "src/contracts/authority.mjs": "51362a0451ba31120a31892880c0d949947b76c935f5e3d9e4bf03d096f7a8c0",
+        "src/contracts/derivation.mjs": "5b6e67790dd920b1641bca2f4070f5662c76011321b82ddcd85f5d2d8007ee9b",
+        "src/contracts/evidence.mjs": "42dd3c9575ef5a5deeb7d85a9fa567a1031504d41ac128cf5f3bd0353bec777c",
+        "src/contracts/identity.mjs": "df481f441eb9d23672f97e41ad5dde3285975117c09172f79e1d9758b60f9a76",
+        "src/contracts/index-trigger.mjs": "142e14343550c43df2481b7a4607f84a91d4f6a5ea864787d15fdd36fe2fc462",
+        "src/contracts/model-envelope.mjs": "bba5beeec54f2465edbb90779c42872a2085914567fc41e583fdbd5fa7da8b2f",
+        "src/contracts/relations.mjs": "ed8446975c2b14b958aa4736e57f5811624f3918273cd690710420ea8edc0883",
+        "src/contracts/scope.mjs": "92feb34c5633a75b465a78b1b69f9acbebb1a49564e916e1daa39f621a1b3a29",
+        "src/core-contract.mjs": "a7256fe3ed45f5fabc0bdb42cd303d3ad1556248a6c6908a8b0bf9c9b0179065",
+        "src/domain/envelopes.mjs": "97c625f336d9b1a8fb8ffef61442d646542ceac176160d251383615681299bcf",
+        "src/domain/errors.mjs": "43774f4a0bb5617da4fb8b73336211d705889e73e620bce3859bb6532c0e2ff6",
+        "src/domain/graph-revision.mjs": "015309bb657ca3c9df0bc2b375c4eefb901e06f2997f6425a5a134e4136e41da",
+        "src/domain/hashing.mjs": "3a4f07ec0b4382b94f94e8ae40edbb893b2ba2d1a9ad9d532e35da2e5588b47e",
+        "src/domain/ids.mjs": "36c9725a8aaa062ad20eee49f11b788b1f16ce99168566f7e0b855a76fbb8a44",
+        "src/domain/immutable.mjs": "2e18c266a235d5570f87b0243eb89781f42b5370edc9fd3c159e81f72609a972",
+        "src/domain/records.mjs": "d2de40994117dbae0d4b4f1d0cd2e1c86f8e5efb0883afb9271eca060c39e319",
+        "src/domain/relation-lifecycle.mjs": "b9136ad42b9b22ab80af26244b2437cbfc1590e87d0e35727d602cc19651f2fd",
+        "src/domain-model.mjs": "5c6d45029156b9736489cd3595c5c942a6f0c1b6896f4aca5c63582dd4443f7f",
+        "src/extraction.mjs": "7c06442381e4375a569a4726dad36e4d421ec35e2bca8b02cb5fd54807aae47f",
+        "src/graph-service.mjs": "ab7d1f2a08c17e49e5e074166a7abc845bdeb045053fb640f0ae9204fa8ba61d",
+        "src/indexing-pipeline.mjs": "982218d81b1414c8b014dd5dd34d73f5d579bb9233cf969ce1fb376f799d28ec",
+        "src/inference.mjs": "658aab799acb54da7a86efbb96e248a2277db16a0e407e36ae9b4cd964874a9a",
+        "src/registry.mjs": "cf2bf8acef39365fcd94e2cb28052e61e57d967eb0aba22db043cfae8b88074f",
+        "src/selection.mjs": "43ff6be0fbe3a468c503841c2155bff859e8678042bffae2ef3c19f76f01a935",
+        "src/source-adapter.mjs": "0007337ea40d31b9e505eb1fe634a0940354afc03bd22bbebbae0b4cd5f1d4fc"
+      }
+    },
+    "fold": {
+      "source": "/Users/sin-yebin/Desktop/project/threadfold",
+      "version": "0.1.0",
+      "commit": "ede34c0dfbd057606fd2e6eb9b95db60831a251d",
+      "files": {
+        "fixtures/completed-run.json": "f993b238ee1f442acd9a80bac33ae59fe12ddd3b10313387972d8cd481da8a45",
+        "package.json": "354c7d74b2e47fb86a615c2826cb142727add5f44672bfaa1e6e92c8bfc85a7f",
+        "src/adapters.js": "aaec046b1d79c37dd331d582d30a064b1502575af2b4832904c69fd1728844b3",
+        "src/engine.js": "42b26288a210edce0f4becdfd49e56662fb8bee11030b5853947f4dc2f0d513e",
+        "src/model.js": "df401bb8bf49108162ffcad212acd3331444ad670fa6e4f84891fcacdedfed0a",
+        "src/store.js": "cba396e450fa689b87787e2bf13baa9e96b7ee4a4285c8d1b8d257eecfe005db",
+        "src/tools.js": "3089ab84cf47f82d814b52a0f3a118407e188d17a1a547eb55c351baa5dcf422"
+      }
+    },
+    "port": {
+      "source": "/Users/sin-yebin/Desktop/project/threadport",
+      "version": "0.1.0",
+      "commit": "684f1a9d6de81b4edbb8cac9566231d670d75912",
+      "files": {
+        "fixtures/conversation.json": "b087c7d6d1eb5974d9423f90ec92a72be86bea2a22c38f7202dcabe2fd27dad5",
+        "package.json": "e35b46d6d71745c954856fce367bde7368323c179dadc96fa0515cbde2788a01",
+        "src/cli.mjs": "5ad5d8f02828f7d65e2cd8444c762c62efb478f151834313b77c16a6fbe2a10d",
+        "src/fs.mjs": "60ddbae6f71862ea76286a96d49f9bc5a117737e94ccaf1de5f7ef4cd266d8b0",
+        "src/history.mjs": "5c189bbb8361410ce474912ed69c6c7ea2050e24e3964933b85dc76de5d9810a",
+        "src/journal.mjs": "3c50f4d591aa1155530754faa1de512a1cfe9e42e71e215574d3009cd6603ab4",
+        "src/mcp.mjs": "3e10d97eaabb1a0af9569abec26004483ff655f9c663442800079a3358cf14b4",
+        "src/package.mjs": "c75e90fa0e25f73c1186fc2a848be5a19367bb48f78b667b26fec08c60105f7b",
+        "src/service.mjs": "c3a24508914328361502f106cab7edc733635e62da407b823051826aa0c3fe4b",
+        "src/strict.mjs": "414585fe7e40bb7e97129157115979b73e3c78c87a5e88cac0d4912dae529b97",
+        "src/zip.mjs": "88bfb86be3975a278ff879385d3dadc02fc598d3d6d5d6c33e912000fef2b8aa"
+      }
+    }
+  },
+  "supportedHostMatrix": [
+    {
+      "os": "macOS",
+      "node": "24.19.0",
+      "cli": "validated macOS 15.5 arm64 / Node 24.19.0; see docs/VERIFICATION.md",
+      "codexNative": "unverified",
+      "embeddedPanel": false
+    }
+  ]
+}

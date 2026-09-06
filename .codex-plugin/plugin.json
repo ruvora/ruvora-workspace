@@ -1,0 +1,21 @@
+{
+  "name": "ruvora-workspace",
+  "version": "0.1.0",
+  "description": "Local project context and workflow gateway; native writes capability-gated",
+  "author": {
+    "name": "RUVORA"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "RUVORA Workspace",
+    "shortDescription": "Local context and work review.",
+    "longDescription": "Read published project context and review workflow stages. Native execution, cleanup and transfer remain gated; fixture journeys are explicit.",
+    "developerName": "RUVORA",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Show this project status."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "new_readonly_drift_gate_check",
+  "expected": "COMPONENT_MISMATCH",
+  "actual": "COMPONENT_MISMATCH",
+  "message": "hub: pinned source differs",
+  "passed": true
+}

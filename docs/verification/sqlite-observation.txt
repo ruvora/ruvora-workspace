@@ -1,0 +1,14 @@
+Diagnostic executed with Node v24.19.0 in an isolated temporary directory.
+Created a WAL-mode SQLite database, closed its writer, enumerated files,
+opened with DatabaseSync(file, {readOnly:true}), SELECT, closed, enumerated files,
+then opened file: URI with immutable=1. The directory was removed afterwards.
+
+Observed tool stdout (verbatim):
+before [ 'graph.sqlite' ]
+after readOnly [ 'graph.sqlite', 'graph.sqlite-shm', 'graph.sqlite-wal' ]
+immutable URI []
+
+Command exit: 0. This is a transcribed observation from the execution result,
+not a replay or a claim that immutable reads can ignore committed WAL safely.
+The implementation now rejects any sidecars and tests immutable reads against
+the actual GraphRegistry-created schema in a temporary directory.

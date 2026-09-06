@@ -1,0 +1,28 @@
+TAP version 13
+# Subtest: Hub disconnect remains attention after preview; known results survive reconnection
+ok 1 - Hub disconnect remains attention after preview; known results survive reconnection
+  ---
+  duration_ms: 5.504459
+  type: 'test'
+  ...
+# Subtest: Hub disconnect remains attention after archive; known results survive reconnection
+ok 2 - Hub disconnect remains attention after archive; known results survive reconnection
+  ---
+  duration_ms: 0.235833
+  type: 'test'
+  ...
+# Subtest: Hub disconnect remains attention after restore; known results survive reconnection
+ok 3 - Hub disconnect remains attention after restore; known results survive reconnection
+  ---
+  duration_ms: 0.193667
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 3
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54.590666

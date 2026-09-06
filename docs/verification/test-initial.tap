@@ -1,0 +1,83 @@
+✔ test/helpers.mjs (39.812917ms)
+✔ existing Fold module handles preview, scoped approval, archive and distinct restore (741.565625ms)
+✔ Fold rejects approval after source state changes and never archives newly active thread (318.279625ms)
+✔ changed plan digest and fabricated receipt are rejected (184.974625ms)
+✔ partial Fold changes stay partial and protected representative remains visible (307.173792ms)
+✔ Graph adapter reads existing schema without migration or creating an absent database (7.542208ms)
+✔ Graph incompatible schema does not affect source or other services (2.052833ms)
+✖ pinned module mismatch is blocked before importing it (2.851083ms)
+✖ existing Port module inspects synthetic package without extraction and rejects traversal (7.209083ms)
+✔ MCP negotiation, static schemas and errors do not leak execution authority (1.690875ms)
+✔ stream handles malformed, fragmented, oversized messages and recovers for next request (2.571792ms)
+✔ actual CLI and launcher run with runtime Node and read-only fresh project (475.019958ms)
+✔ fresh open creates no state, index or work and reports unavailable services (2.988416ms)
+✔ identity and canonical path cannot be silently rebound or fixture promoted (10.985917ms)
+✔ context selection pins references, reason and observation time without reindexing (31.251875ms)
+✔ stale, wrong branch, unknown evidence and conflicts fail closed (31.02025ms)
+✔ dispatch checks pinned evidence again and does not apply changed revision (52.572417ms)
+✔ duplicate requests and response loss reconcile exactly one fixture operation across restart (137.673708ms)
+✔ unknown dispatch outcome never causes automatic replay (94.602583ms)
+✔ completion observations do not automatically start cleanup; disconnect is not success (99.614041ms)
+✔ old product observations are rejected (83.109584ms)
+✔ cancel followup retains successful work and running-work cancellation is separate (223.916625ms)
+✔ workspace lock rejects concurrent writers, read still works, no auto lock stealing (9.719459ms)
+✔ native mutation stays blocked even with fabricated approval and unknown generic commands (32.568875ms)
+✔ component failure is isolated from usable status and other components (8.645417ms)
+✔ removing a gateway reference leaves fixture product operation running (92.788167ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 24
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1637.499
+
+✖ failing tests:
+
+test at test/integration.test.mjs:72:1
+✖ pinned module mismatch is blocked before importing it (2.851083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    Comparison {
+  +   code: 'ENOENT'
+  -   code: 'COMPONENT_MISMATCH'
+    }
+  
+      at TestContext.<anonymous> (file:///Users/sin-yebin/Desktop/project/ruvora-workspace/test/integration.test.mjs:74:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: ENOENT: no such file or directory, lstat '/private/var/folders/nw/sjbybhfs0tjc85hdsmsh_x6c0000gn/T/ruvora-workspace-test-Q1L0pL/fixtures'
+        at Object.realpathSync (node:fs:2848:29)
+        at verifyComponent (file:///Users/sin-yebin/Desktop/project/ruvora-workspace/src/components.mjs:14:13)
+        at assert.throws.code (file:///Users/sin-yebin/Desktop/project/ruvora-workspace/test/integration.test.mjs:74:23)
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///Users/sin-yebin/Desktop/project/ruvora-workspace/test/integration.test.mjs:74:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1382:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+        at Test.postRun (node:internal/test_runner/test:1522:19),
+    expected: { code: 'COMPONENT_MISMATCH' },
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at test/integration.test.mjs:76:1
+✖ existing Port module inspects synthetic package without extraction and rejects traversal (7.209083ms)
+  Error: BOUNDARY_INVALID
+      at need (file:///Users/sin-yebin/Desktop/project/threadport/src/strict.mjs:3:75)
+      at materialize (file:///Users/sin-yebin/Desktop/project/threadport/src/history.mjs:31:55)
+      at buildFixturePackage (file:///Users/sin-yebin/Desktop/project/threadport/src/package.mjs:22:10)
+      at TestContext.<anonymous> (file:///Users/sin-yebin/Desktop/project/ruvora-workspace/test/integration.test.mjs:81:17)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    code: 'BOUNDARY_INVALID'
+  }

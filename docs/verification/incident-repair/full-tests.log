@@ -1,0 +1,41 @@
+✔ Hub disconnect remains attention after preview; known results survive reconnection (3.206708ms)
+✔ Hub disconnect remains attention after archive; known results survive reconnection (0.247417ms)
+✔ Hub disconnect remains attention after restore; known results survive reconnection (0.185083ms)
+✔ test/helpers.mjs (40.612958ms)
+✔ existing Fold module handles preview, scoped approval, archive and distinct restore (832.238125ms)
+✔ Fold rejects approval after source state changes and never archives newly active thread (365.173375ms)
+✔ changed plan digest and fabricated receipt are rejected (150.769125ms)
+✔ partial Fold changes stay partial and protected representative remains visible (262.511709ms)
+✔ Graph adapter reads existing schema without migration or creating an absent database (6.342792ms)
+✔ Graph incompatible schema does not affect source or other services (1.797917ms)
+✔ read-only Graph attach interoperates with the actual pinned Registry schema (12.594625ms)
+✔ Graph live WAL attach is blocked rather than creating or altering sidecars (1.818041ms)
+✔ pinned module mismatch is blocked before importing it (1.125458ms)
+✔ existing Port module inspects synthetic package without extraction and rejects traversal (56.057375ms)
+✔ MCP negotiation, static schemas and errors do not leak execution authority (1.728333ms)
+✔ stream handles malformed, fragmented, oversized messages and recovers for next request (4.197166ms)
+✔ actual CLI and launcher run with runtime Node and read-only fresh project (79.801625ms)
+✔ fresh open creates no state, index or work and reports unavailable services (7.126125ms)
+✔ identity and canonical path cannot be silently rebound or fixture promoted (13.288791ms)
+✔ context selection pins references, reason and observation time without reindexing (27.916125ms)
+✔ stale, wrong branch, unknown evidence and conflicts fail closed (26.203875ms)
+✔ dispatch checks pinned evidence again and does not apply changed revision (51.816416ms)
+✔ duplicate requests and response loss reconcile exactly one fixture operation across restart (137.221333ms)
+✔ unknown dispatch outcome never causes automatic replay (95.262875ms)
+✔ completion observations do not automatically start cleanup; disconnect is not success (102.088541ms)
+✔ old product observations are rejected (85.301833ms)
+✔ cancel followup retains successful work and running-work cancellation is separate (246.50925ms)
+✔ workspace lock rejects concurrent writers, read still works, no auto lock stealing (9.811875ms)
+✔ native mutation stays blocked even with fabricated approval and unknown generic commands (14.791625ms)
+✔ component failure is isolated from usable status and other components (3.282125ms)
+✔ removing a gateway reference leaves fixture product operation running (95.583208ms)
+✔ symlink parents are rejected before any child directory is created (5.141917ms)
+✔ read-only review after product-data removal never seeds a replacement inventory (234.12ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1755.367417

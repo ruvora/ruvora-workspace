@@ -1,0 +1,190 @@
+TAP version 13
+# Subtest: test/helpers.mjs
+ok 1 - test/helpers.mjs
+  ---
+  duration_ms: 39.151208
+  type: 'test'
+  ...
+# Subtest: existing Fold module handles preview, scoped approval, archive and distinct restore
+ok 2 - existing Fold module handles preview, scoped approval, archive and distinct restore
+  ---
+  duration_ms: 832.572
+  type: 'test'
+  ...
+# Subtest: Fold rejects approval after source state changes and never archives newly active thread
+ok 3 - Fold rejects approval after source state changes and never archives newly active thread
+  ---
+  duration_ms: 362.890917
+  type: 'test'
+  ...
+# Subtest: changed plan digest and fabricated receipt are rejected
+ok 4 - changed plan digest and fabricated receipt are rejected
+  ---
+  duration_ms: 162.075709
+  type: 'test'
+  ...
+# Subtest: partial Fold changes stay partial and protected representative remains visible
+ok 5 - partial Fold changes stay partial and protected representative remains visible
+  ---
+  duration_ms: 302.285292
+  type: 'test'
+  ...
+# Subtest: Graph adapter reads existing schema without migration or creating an absent database
+ok 6 - Graph adapter reads existing schema without migration or creating an absent database
+  ---
+  duration_ms: 7.124958
+  type: 'test'
+  ...
+# Subtest: Graph incompatible schema does not affect source or other services
+ok 7 - Graph incompatible schema does not affect source or other services
+  ---
+  duration_ms: 2.086709
+  type: 'test'
+  ...
+# Subtest: read-only Graph attach interoperates with the actual pinned Registry schema
+ok 8 - read-only Graph attach interoperates with the actual pinned Registry schema
+  ---
+  duration_ms: 14.86875
+  type: 'test'
+  ...
+# Subtest: Graph live WAL attach is blocked rather than creating or altering sidecars
+ok 9 - Graph live WAL attach is blocked rather than creating or altering sidecars
+  ---
+  duration_ms: 2.35125
+  type: 'test'
+  ...
+# Subtest: pinned module mismatch is blocked before importing it
+ok 10 - pinned module mismatch is blocked before importing it
+  ---
+  duration_ms: 1.253541
+  type: 'test'
+  ...
+# Subtest: existing Port module inspects synthetic package without extraction and rejects traversal
+ok 11 - existing Port module inspects synthetic package without extraction and rejects traversal
+  ---
+  duration_ms: 47.176583
+  type: 'test'
+  ...
+# Subtest: MCP negotiation, static schemas and errors do not leak execution authority
+ok 12 - MCP negotiation, static schemas and errors do not leak execution authority
+  ---
+  duration_ms: 1.722541
+  type: 'test'
+  ...
+# Subtest: stream handles malformed, fragmented, oversized messages and recovers for next request
+ok 13 - stream handles malformed, fragmented, oversized messages and recovers for next request
+  ---
+  duration_ms: 2.57175
+  type: 'test'
+  ...
+# Subtest: actual CLI and launcher run with runtime Node and read-only fresh project
+ok 14 - actual CLI and launcher run with runtime Node and read-only fresh project
+  ---
+  duration_ms: 82.316708
+  type: 'test'
+  ...
+# Subtest: fresh open creates no state, index or work and reports unavailable services
+ok 15 - fresh open creates no state, index or work and reports unavailable services
+  ---
+  duration_ms: 2.961
+  type: 'test'
+  ...
+# Subtest: identity and canonical path cannot be silently rebound or fixture promoted
+ok 16 - identity and canonical path cannot be silently rebound or fixture promoted
+  ---
+  duration_ms: 10.160792
+  type: 'test'
+  ...
+# Subtest: context selection pins references, reason and observation time without reindexing
+ok 17 - context selection pins references, reason and observation time without reindexing
+  ---
+  duration_ms: 31.892208
+  type: 'test'
+  ...
+# Subtest: stale, wrong branch, unknown evidence and conflicts fail closed
+ok 18 - stale, wrong branch, unknown evidence and conflicts fail closed
+  ---
+  duration_ms: 24.895916
+  type: 'test'
+  ...
+# Subtest: dispatch checks pinned evidence again and does not apply changed revision
+ok 19 - dispatch checks pinned evidence again and does not apply changed revision
+  ---
+  duration_ms: 51.587625
+  type: 'test'
+  ...
+# Subtest: duplicate requests and response loss reconcile exactly one fixture operation across restart
+ok 20 - duplicate requests and response loss reconcile exactly one fixture operation across restart
+  ---
+  duration_ms: 135.5245
+  type: 'test'
+  ...
+# Subtest: unknown dispatch outcome never causes automatic replay
+ok 21 - unknown dispatch outcome never causes automatic replay
+  ---
+  duration_ms: 97.6535
+  type: 'test'
+  ...
+# Subtest: completion observations do not automatically start cleanup; disconnect is not success
+ok 22 - completion observations do not automatically start cleanup; disconnect is not success
+  ---
+  duration_ms: 102.749625
+  type: 'test'
+  ...
+# Subtest: old product observations are rejected
+ok 23 - old product observations are rejected
+  ---
+  duration_ms: 83.990583
+  type: 'test'
+  ...
+# Subtest: cancel followup retains successful work and running-work cancellation is separate
+ok 24 - cancel followup retains successful work and running-work cancellation is separate
+  ---
+  duration_ms: 246.260167
+  type: 'test'
+  ...
+# Subtest: workspace lock rejects concurrent writers, read still works, no auto lock stealing
+ok 25 - workspace lock rejects concurrent writers, read still works, no auto lock stealing
+  ---
+  duration_ms: 7.602333
+  type: 'test'
+  ...
+# Subtest: native mutation stays blocked even with fabricated approval and unknown generic commands
+ok 26 - native mutation stays blocked even with fabricated approval and unknown generic commands
+  ---
+  duration_ms: 24.985792
+  type: 'test'
+  ...
+# Subtest: component failure is isolated from usable status and other components
+ok 27 - component failure is isolated from usable status and other components
+  ---
+  duration_ms: 4.037083
+  type: 'test'
+  ...
+# Subtest: removing a gateway reference leaves fixture product operation running
+ok 28 - removing a gateway reference leaves fixture product operation running
+  ---
+  duration_ms: 83.397792
+  type: 'test'
+  ...
+# Subtest: symlink parents are rejected before any child directory is created
+ok 29 - symlink parents are rejected before any child directory is created
+  ---
+  duration_ms: 3.379
+  type: 'test'
+  ...
+# Subtest: read-only review after product-data removal never seeds a replacement inventory
+ok 30 - read-only review after product-data removal never seeds a replacement inventory
+  ---
+  duration_ms: 237.574875
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1797.591708

@@ -1,0 +1,123 @@
+{
+  "observedAt": "2026-09-06T05:28:58.204Z",
+  "kind": "new_readonly_lock_audit",
+  "jsonValid": true,
+  "lockSha256": "7b66dc24620086997de9172b9a2f1e49af246a2354b7dfb09508963e8585e719",
+  "supportedHostMatrix": [
+    {
+      "os": "macOS",
+      "node": "24.19.0",
+      "cli": "validated macOS 15.5 arm64 / Node 24.19.0; see docs/VERIFICATION.md",
+      "codexNative": "unverified",
+      "embeddedPanel": false
+    }
+  ],
+  "sourceDesigns": [
+    {
+      "file": "docs/source/RUVORA_WORKSPACE_ARCHITECTURE.md",
+      "expected": "65ab1b7386af6c3fef7f91e96c2a6955eabc8d6382ee70c449c4f081530d2bb6",
+      "actual": "65ab1b7386af6c3fef7f91e96c2a6955eabc8d6382ee70c449c4f081530d2bb6",
+      "matches": true
+    },
+    {
+      "file": "docs/source/RUVORA_WORKSPACE_DESIGN.md",
+      "expected": "ce1d07114d1a58254126d890748fbeb5d5fc353244a007c157adf6f180585c2e",
+      "actual": "ce1d07114d1a58254126d890748fbeb5d5fc353244a007c157adf6f180585c2e",
+      "matches": true
+    }
+  ],
+  "components": {
+    "hub": {
+      "source": "/Users/sin-yebin/Desktop/project/codex-control-plane",
+      "pinnedCommit": "82786f30f97149cc95c124a31a91c01de5bf9cf9",
+      "pinnedFiles": 47,
+      "matches": 43,
+      "changes": [
+        {
+          "file": "src/command-evidence.js",
+          "expected": "d55991bcda6db793a4cbd96db678195c736db902a7d679c6b2c8cc4775e0b7e8",
+          "actual": "1dc0ad168f043eeece96cbc2096d9668ef0fdba37d9e0ecdfd1d2bd71dc0dc18"
+        },
+        {
+          "file": "src/failure-classifier.js",
+          "expected": "0acdab96b8ab718c90b29171a69015f679a75184bec3d08c0ee72aaf230f9fcb",
+          "actual": "deefb8cbdceb2427792757d9ece322c97761cc5c8c54441a35228e4067416331"
+        },
+        {
+          "file": "src/native-evidence.js",
+          "expected": "f5f070e01d9385fce6be7148b68774fbcd49b23269fc75af489cba343452dbd4",
+          "actual": "a7eb683037d3a5e4d69012f6972793e6cb85c966a350631efd93c5ee0cd38992"
+        },
+        {
+          "file": "src/result-validator.js",
+          "expected": "b6404e987f493df9288a1a07d080883c71ace14a2f2b1099dc7d8e62d505d2ec",
+          "actual": "75cbe7c3e24a619383f1378f9330284e5b318fffc92466bb89156b8d3645efdd"
+        }
+      ]
+    },
+    "graph": {
+      "source": "/Users/sin-yebin/Desktop/project/codex-threadgraph",
+      "pinnedCommit": "aecd6ca4735c3dca7f550316e29b80de945150fb",
+      "pinnedFiles": 28,
+      "matches": 28,
+      "changes": []
+    },
+    "fold": {
+      "source": "/Users/sin-yebin/Desktop/project/threadfold",
+      "pinnedCommit": "ede34c0dfbd057606fd2e6eb9b95db60831a251d",
+      "pinnedFiles": 7,
+      "matches": 7,
+      "changes": []
+    },
+    "port": {
+      "source": "/Users/sin-yebin/Desktop/project/threadport",
+      "pinnedCommit": "684f1a9d6de81b4edbb8cac9566231d670d75912",
+      "pinnedFiles": 11,
+      "matches": 11,
+      "changes": []
+    }
+  },
+  "workspaceBaseline": {
+    ".codex-plugin/plugin.json": "ba25b84fce8be316345acd23df80d0bce1fb0f658dd8987a00cea9e3384f6cfb",
+    ".gitignore": "d62e5b516e999b92276d27728f4102010cbae8aca9942e15020989eaa8c31356",
+    ".mcp.json": "d0f09209769910332ef82747bf6606e1243d074d8afaed95eeac926021d1c49e",
+    "README.md": "b03b773f75c11713a5c6035de079a27ec89c032fcebc890be55c0be67763dd15",
+    "bin/launch-mcp": "d02d73c65ebfee27f4b1647482547832e29f1f8fd15dd7bb3c2a7217ff318520",
+    "bin/workspace.mjs": "1229cfbeda56ebc5d788f1c2c3ba430a7dc223c90f0804b1400bc7192e693d29",
+    "docs/IMPLEMENTATION_APPENDIX.md": "34b5ab4e2a2d6aa6dff0c58714231354ed062312dba3a05f8e8fe24664c8a357",
+    "docs/USAGE_KO.md": "af1e493be23679e0833ae2f380bedbd1c956433d1daeeb8c2e6f2129f43eca14",
+    "docs/VERIFICATION.md": "c5b02a31dc93f0193268baa75edb0ca502c51f163b103be25fae364c6154f040",
+    "docs/source/RUVORA_WORKSPACE_ARCHITECTURE.md": "65ab1b7386af6c3fef7f91e96c2a6955eabc8d6382ee70c449c4f081530d2bb6",
+    "docs/source/RUVORA_WORKSPACE_DESIGN.md": "ce1d07114d1a58254126d890748fbeb5d5fc353244a007c157adf6f180585c2e",
+    "docs/verification/demo-verified.txt": "f1538420d32d2f142e00cd00032de94bbf2d8e97845e58757b1048e18d633fb0",
+    "docs/verification/demo.txt": "5f1e6cff8100b8e8c3417a63be2dd080dd547b4094d95ae92ba94fe9714169eb",
+    "docs/verification/plugin-validation.txt": "ed2bd01316c598846eb7a342a0472ea654c4dce00f7acb28699249aafebc662a",
+    "docs/verification/skill-validation.txt": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0",
+    "docs/verification/source-integrity.txt": "6429703abe150658fe2087f977a439ad5f147dd877621e52dba21f3f53879c99",
+    "docs/verification/sqlite-observation.txt": "95dad5af7eb5b7c06b29f71a0fd0ed690b14a4a2fb5e3a9fcec03f63cd7ae8fa",
+    "docs/verification/test-after-fixes.tap": "f4793ed539accae1f4e74f3635b73e280b7598e88c89a213d70930ad5848d00c",
+    "docs/verification/test-final.tap": "aa4216398fbf3f90db56057601ae534a804ee38af4e40223a61fb0f99b274820",
+    "docs/verification/test-initial.tap": "5dd7854e4119192d3a9e999a190b60f0f8e3e14e99ddb79d2fc80d4e0efbf0c8",
+    "docs/verification/test-release.tap": "3bc4496e71d51a7dc43f1b27bc46133f7923567503d6dddce2d36ed36c3c7de2",
+    "docs/verification/test-review.tap": "9838da6a15cbdf1d3e51cfb9e06fdfd2f1058f29e2376870b494d400c8a740d4",
+    "docs/verification/test-verified.tap": "d992d43bedafc72615c3ea978cbec83bec267872edde67ed47f9b6602f767cde",
+    "package.json": "3f7bec5de8a639123d4284433a013d928936a82ac0bfbfb4fb53257f484e77c0",
+    "scripts/demo.mjs": "d2a08ac1b04b81031c5ce7abfa98490f47e31643da346df9a10ee009bbfe8594",
+    "scripts/verify-sources.mjs": "aa9d6db1022a97c4e88a105716ed04a25127642e89c5cc77dcd63e96569512c3",
+    "skills/ruvora-workspace/SKILL.md": "3cb560d26176ee860727e03dede0dc9d666cafe3ebbb281e5075a2349221b44b",
+    "src/components.mjs": "8519a21dd3a3a068d48d0b2a1176ff08d130180c1c98c7b5cfa1f1b32bb484bc",
+    "src/contracts.d.ts": "f2a18118641eb16a2dd4fa7e4425d6b5c6a9d2636bb6d69a4649c7fcb73cdd45",
+    "src/contracts.mjs": "009baf7e8d05fac8ff5897f32730179a463963b6592873ea62b31e6ce2bf9832",
+    "src/fixture.mjs": "7b246ee40c5bed98e40e5d5dcfc474ed05d002f2d2c0c00192a3d79478878959",
+    "src/mcp.mjs": "61bac1aa25ec0e6e39045c7f4dd670cf8a69a8e9c972738dc5a32a4e8f3495b5",
+    "src/report.mjs": "bd1f5edd36e05b15b0d77a8c9c0c8b2cd6f5e3c920264b7b5b39f65d08151fa3",
+    "src/store.mjs": "7dfe9b3d39d873a6b4b2e5dae4fade9ce6e332a9e2abce68779c89427dc415dc",
+    "src/tools.mjs": "b872a96acf9f0391d014fe5d30ef1ca5aeea2e09f14896f114393367d8de1e64",
+    "src/workspace.mjs": "19d291905aa140370a0a3d5de1f9d24b827d0bbb9e5cc512a6c62b1b8f499728",
+    "test/helpers.mjs": "79b4fab4eace212e2c604bd475b2af5b3b6a5fe022fd070644fd117b53ff8a26",
+    "test/integration.test.mjs": "b7cb1166c229e9b1ac8b01ef59a3d80898965aa5210518157d888c4cf0bfe3e8",
+    "test/mcp.test.mjs": "57622d7d576a0f6fc025f2d33cd4e2852b17d7a9448dc888638b2f94a0709b0b",
+    "test/workspace.test.mjs": "aeea18357a18ff61c1c23c95a99684b5cce54484fcfff170c45f59acb43e6565",
+    "workspace-lock.json": "7b66dc24620086997de9172b9a2f1e49af246a2354b7dfb09508963e8585e719"
+  }
+}

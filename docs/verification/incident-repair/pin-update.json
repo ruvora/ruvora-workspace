@@ -1,0 +1,32 @@
+[
+  {
+    "component": "hub",
+    "file": "src/command-evidence.js",
+    "before": "d55991bcda6db793a4cbd96db678195c736db902a7d679c6b2c8cc4775e0b7e8",
+    "after": "1dc0ad168f043eeece96cbc2096d9668ef0fdba37d9e0ecdfd1d2bd71dc0dc18"
+  },
+  {
+    "component": "hub",
+    "file": "src/failure-classifier.js",
+    "before": "0acdab96b8ab718c90b29171a69015f679a75184bec3d08c0ee72aaf230f9fcb",
+    "after": "deefb8cbdceb2427792757d9ece322c97761cc5c8c54441a35228e4067416331"
+  },
+  {
+    "component": "hub",
+    "file": "src/native-evidence.js",
+    "before": "f5f070e01d9385fce6be7148b68774fbcd49b23269fc75af489cba343452dbd4",
+    "after": "66c1af9fffc5bb6d45939bc51c5a7b1094e7eb9447785e6022a423c9fd9662bf"
+  },
+  {
+    "component": "hub",
+    "file": "src/result-validator.js",
+    "before": "b6404e987f493df9288a1a07d080883c71ace14a2f2b1099dc7d8e62d505d2ec",
+    "after": "75cbe7c3e24a619383f1378f9330284e5b318fffc92466bb89156b8d3645efdd"
+  },
+  {
+    "component": "fold",
+    "file": "src/model.js",
+    "before": "cb1042867ee6eceb2a5f37974c74e0ba1a5abd932d4af9cf64c9873991590e96",
+    "after": "df401bb8bf49108162ffcad212acd3331444ad670fa6e4f84891fcacdedfed0a"
+  }
+]

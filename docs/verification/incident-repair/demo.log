@@ -1,0 +1,114 @@
+RUVORA Workspace · Local fixture journey
+범위: fixture-host / fixture-project · main
+모드: fixture · 확인: 2026-09-06T05:54:10.627Z
+
+연결 상태
+- hub: 연결됨 (fixture; CONTRACT_DOUBLE_NO_NATIVE_EXECUTION)
+- graph: 연결됨 (fixture; current)
+- fold: 연결됨 (fixture; PINNED_MODULE_SIMULATION_ONLY)
+- port: 연결됨 (static_inspection; SYNTHETIC_FORMAT_ONLY_NATIVE_TRANSFER_BLOCKED)
+
+주의가 필요한 일: 0
+이어갈 작업: 1
+- Demonstrate context → work → cleanup using synthetic records: completed [workflow_70d7d646-e023-4995-822b-7b7b33177e0e]
+  다음: Restore completed; review the retained work and cleanup history.
+
+현재 맥락: 연결됨 / current
+근거 시점: 2026-09-06T05:54:10.170Z
+선택된 맥락: 1
+저장된 정리 검토: 2
+이전: 로컬 synthetic 패키지 검사만 가능; native export/import 미지원.
+작업 열기: 호스트 탐색 미지원. 확인되지 않은 링크는 제공하지 않습니다.
+
+Choose context or prepare a workflow; refresh and execution are separate actions.
+
+{
+  "mode": "fixture",
+  "nativeThreadsCreated": 0,
+  "nativeArchives": 0,
+  "operationCount": 1,
+  "context": "context_3f4ddf24-3c94-4524-a78a-2c2aca4f5487",
+  "operationId": "fixture-work-44d0cc4ec49cd5960eb6aabc",
+  "archive": {
+    "operationId": "operation_1682d2fb-2605-40ee-96ba-9f7c8eecc25d",
+    "status": "applied",
+    "items": [
+      {
+        "afterArchived": true,
+        "afterRevision": 2,
+        "beforeArchived": false,
+        "changed": true,
+        "ownerOperationId": "operation_1682d2fb-2605-40ee-96ba-9f7c8eecc25d",
+        "status": "verified_archived",
+        "threadRef": {
+          "hostId": "fixture-host",
+          "threadId": "thread-1"
+        }
+      },
+      {
+        "afterArchived": true,
+        "afterRevision": 2,
+        "beforeArchived": false,
+        "changed": true,
+        "ownerOperationId": "operation_1682d2fb-2605-40ee-96ba-9f7c8eecc25d",
+        "status": "verified_archived",
+        "threadRef": {
+          "hostId": "fixture-host",
+          "threadId": "thread-2"
+        }
+      }
+    ]
+  },
+  "restore": {
+    "operationId": "operation_5409ec9a-ea2b-413b-9ec6-f2caa3aa0632",
+    "status": "applied",
+    "items": [
+      {
+        "afterArchived": false,
+        "afterRevision": 3,
+        "beforeArchived": true,
+        "changed": true,
+        "ownerOperationId": "operation_5409ec9a-ea2b-413b-9ec6-f2caa3aa0632",
+        "status": "verified_restored",
+        "threadRef": {
+          "hostId": "fixture-host",
+          "threadId": "thread-1"
+        }
+      },
+      {
+        "afterArchived": false,
+        "afterRevision": 3,
+        "beforeArchived": true,
+        "changed": true,
+        "ownerOperationId": "operation_5409ec9a-ea2b-413b-9ec6-f2caa3aa0632",
+        "status": "verified_restored",
+        "threadRef": {
+          "hostId": "fixture-host",
+          "threadId": "thread-2"
+        }
+      }
+    ]
+  },
+  "port": {
+    "schemaVersion": "threadport.inspection/0.1.0",
+    "valid": true,
+    "packageDigest": "b7c38ac7c0c160204ce30c22cc20bca45a571808744e7f418feb074bc5de6729",
+    "historyDigest": "c00f061267cf96073072b56d48d3551f510a16af6e33c26e720942b6aaf70497",
+    "recordCount": 5,
+    "fidelity": "exact_stored_history",
+    "evidenceClass": "synthetic_only",
+    "identityStatus": "unverified_claim",
+    "nativeExecutable": false,
+    "gates": {
+      "G0": "unverified",
+      "G3": "unverified"
+    },
+    "blockers": [
+      "NATIVE_ADAPTER_UNVERIFIED"
+    ],
+    "warnings": [
+      "Imported content is untrusted; no authority, tools or settings are activated.",
+      "Static validity does not prove source truth, boundary provenance or absence of semantic secrets."
+    ]
+  }
+}

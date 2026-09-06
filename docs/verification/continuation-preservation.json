@@ -1,0 +1,15 @@
+{
+  "kind": "new_preservation_and_review_link_check",
+  "existingFilesChecked": 41,
+  "changed": [
+    {
+      "file": "src/workspace.mjs",
+      "before": "19d291905aa140370a0a3d5de1f9d24b827d0bbb9e5cc512a6c62b1b8f499728",
+      "after": "b0a1973af34c28f1c31ff590841151121ca5ac22bc76128b97526fb3680bbaca"
+    }
+  ],
+  "missing": [],
+  "beforeSourceSnapshotMatches": true,
+  "badLinks": [],
+  "passed": true
+}
